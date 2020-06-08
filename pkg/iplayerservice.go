@@ -21,7 +21,7 @@ type GetRecentlyPlayedGamesParams struct {
 
 // GetRecentlyPlayedGamesResult defines the result of GetRecentlyPlayedGames.
 type GetRecentlyPlayedGamesResult struct {
-	GameCount int     `json:"count"`
+	TotalCount int     `json:"total_count"`
 	Games     []*Game `json:"games"`
 }
 
@@ -65,6 +65,7 @@ type Game struct {
 	Appid                    int    `json:"appid"`
 	Name                     string `json:"name"`
 	PlaytimeForever          int    `json:"playtime_forever"`
+	Playtime2Weeks          int    `json:"playtime_2weeks"`
 	ImgIconURL               string `json:"img_icon_url"`
 	ImgLogoURL               string `json:"img_logo_url"`
 	HasCommunityVisibleStats bool   `json:"has_community_visible_stats"`
