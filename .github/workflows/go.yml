@@ -24,6 +24,6 @@ jobs:
 
     - name: Test
       env:
-          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
-          STEAM_ID: ${{ secrets.STEAM_ID }}
+          STEAM_API_KEY: ${{ secrets.3D77029958A2149077545CD01A707B32}}
+          STEAM_ID: ${{ secrets.kunpeng9 2023 0703 }}
       run: go test -v ./pkg
